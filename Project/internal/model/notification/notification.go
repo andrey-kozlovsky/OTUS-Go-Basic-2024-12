@@ -1,13 +1,15 @@
 package notification
 
-import "time"
+import (
+	"time"
+)
 
 // Notification представляет сущность уведомления.
 type Notification struct {
-	id      int       // Приватное поле
-	Message string    // Публичное поле
-	SentAt  time.Time // Публичное поле
-	isRead  bool      // Приватное поле
+	id      int
+	Message string
+	SentAt  time.Time
+	isRead  bool
 }
 
 // NewNotification создает новое уведомление.

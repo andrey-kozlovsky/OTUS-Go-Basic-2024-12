@@ -2,9 +2,9 @@ package user
 
 // User представляет сущность пользователя.
 type User struct {
-	id       int    // Приватное поле
-	Username string // Публичное поле
-	email    string // Приватное поле
+	id       int
+	Username string
+	email    string
 }
 
 // NewUser создает нового пользователя.
