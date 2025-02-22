@@ -1,14 +1,16 @@
 package task
 
-import "time"
+import (
+	"time"
+)
 
 // Task представляет сущность задачи.
 type Task struct {
-	id          int       // Приватное поле (доступно только внутри пакета)
-	Title       string    // Публичное поле
-	Description string    // Публичное поле
-	Completed   bool      // Публичное поле
-	createdAt   time.Time // Приватное поле
+	id          int
+	Title       string
+	Description string
+	Completed   bool
+	createdAt   time.Time
 }
 
 // NewTask создает новую задачу.
